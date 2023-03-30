@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Manipulation</title>
+</head>
+<body>
+  <h1 id="sentence">
+    Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Eos modi labore ab perferendis
+    voluptas inventore harum tempora exercitationem ratione
+    expedita vel minus, itaque iste maiores deleniti esse atque corporis repellat.
+  </h1>
+  
+  <script>
+    var sentenceNode = document.getElementById("sentence");
+    var sentence = sentenceNode.innerHTML;
+    
+    var UpperSentence = sentence.toUpperCase();
+    var lowerSentence = sentence.toLowerCase();
+    var allWords= sentence.split("");
+    sentenceNode.innerText = lowerSentence;
+    
+  </script>
+</body>
+</html>
